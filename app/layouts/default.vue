@@ -1,7 +1,8 @@
+<script setup lang="ts"></script>
 <template>
-  <Header />
-  <main class="min-h-screen">
+  <main>
+    <AppHeader />
     <slot />
+    <AppFooter />
   </main>
-  <Footer />
 </template>

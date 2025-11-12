@@ -1,4 +1,4 @@
 <script></script>
 <template>
-  <div>Error</div>
+  <div>Contact</div>
 </template>
