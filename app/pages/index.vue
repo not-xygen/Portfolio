@@ -16,7 +16,7 @@
       </div>
       <div class="flex flex-col md:flex-row justify-around items-center pt-6 md:pt-12 gap-4 lg:gap-0">
         <ClientOnly>
-          <BlurReveal :delay="0.2" :duration="0.75" class="">
+          <BlurReveal :delay="0.1" :duration="0.50" class="">
             <h2 class="text-3xl font-bold tracking-tighter xl:text-7xl/none sm:text-5xl">Halo 👋</h2>
             <span class="text-pretty text-xl tracking-tighter xl:text-5xl/none sm:text-3xl">
               Selamat Datang
@@ -25,17 +25,19 @@
               di Portfolio Saya
             </span>
           </BlurReveal>
+          <BlurReveal :delay="0.1" :duration="0.50" class="h-full w-3/4 md:w-1/2 lg:w-1/3">
+            <NuxtImg src="/hero-image.png" class="h-full w-full" />
+          </BlurReveal>
         </ClientOnly>
-        <NuxtImg src="/hero-image.png" class="h-full w-3/4 md:w-1/2 lg:w-1/3" />
       </div>
     </AppContentMain>
     <AppContentSide />
 
     <!-- Short Introduction -->
     <AppContentSide />
-    <AppContentMain class="p-8 lg:p-24 bg-stone-50 dark:bg-stone-950 border-t">
+    <AppContentMain class="p-8 lg:p-24 bg-stone-50 dark:bg-stone-950">
       <ClientOnly>
-        <BlurReveal :delay="0.2" :duration="0.75" class="">
+        <BlurReveal :delay="0.1" :duration="0.50" class="">
           <p>Lulusan Teknik Informatika dari Institut Teknologi Kalimantan (IPK 3,26/4,0) dengan pengalaman
             mengembangkan proyek web dan perangkat lunak nyata. Berfokus pada pembuatan solusi digital yang efisien dan
             berorientasi pada pengguna, serta terus mengasah kemampuan di bidang pengembangan frontend dan backend.
@@ -49,9 +51,9 @@
 
     <!-- Contact -->
     <AppContentSide />
-    <AppContentMain class="p-8 lg:p-24 bg-stone-50 dark:bg-stone-950 border-t">
+    <AppContentMain class="p-8 lg:p-24 bg-stone-50 dark:bg-stone-950">
       <ClientOnly>
-        <BlurReveal :delay="0.2" :duration="0.75" class="">
+        <BlurReveal :delay="0.1" :duration="0.50" class="">
           <h1 class="text-4xl font-bold mb-8">Website sedang dibangun</h1>
           <div class="prose dark:prose-invert">
             <p>Halaman ini sedang dibangun. Konten akan segera mencakup portofolio proyek, studi kasus teknis, daftar
