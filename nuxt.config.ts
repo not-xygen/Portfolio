@@ -38,6 +38,11 @@ export default defineNuxtConfig({
   i18n: {
     strategy: "no_prefix",
     defaultLocale: "en",
+    langDir: "locales",
+    locales: [
+      { code: "en", name: "English", file: "en.json" },
+      { code: "id", name: "Indonesia", file: "id.json" },
+    ],
   },
 
   shadcn: {

@@ -17,6 +17,7 @@
     "@nuxt/ui": "^4.1.0",
     "@nuxtjs/fontaine": "0.5.0",
     "@nuxtjs/i18n": "10.2.0",
+    "@nuxtjs/seo": "^3.2.2",
     "@tailwindcss/vite": "^4.1.17",
     "@unhead/vue": "^2.0.3",
     "@vueuse/core": "^14.0.0",
@@ -44,8 +45,11 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.5",
+    "@iconify-json/lucide": "^1.2.75",
     "@iconify-json/radix-icons": "^1.2.5",
     "@iconify/vue": "^5.0.0",
-    "@nuxtjs/color-mode": "^4.0.0"
+    "@nuxtjs/color-mode": "^4.0.0",
+    "zod": "^4.1.13",
+    "zod-to-json-schema": "^3.25.0"
   }
 }

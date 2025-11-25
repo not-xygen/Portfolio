@@ -133,7 +133,9 @@ body {
 }
 
 .logo-title {
-  font-family: Stack Sans Notch, cursive;
+  font-family:
+    Stack Sans Notch,
+    cursive;
 }
 
 html {
@@ -144,4 +146,40 @@ html.dark {
 }
 html.light {
   color-scheme: light;
+}
+
+.heading-1 {
+  @apply scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance;
+}
+
+.heading-2 {
+  @apply scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0;
+}
+
+.heading-3 {
+  @apply scroll-m-20 text-2xl font-semibold tracking-tight;
+}
+
+.heading-4 {
+  @apply scroll-m-20 text-xl font-semibold tracking-tight;
+}
+
+.paragraph {
+  @apply leading-7 [&:not(:first-child)]:mt-6;
+}
+
+.blockquote {
+  @apply mt-6 border-l-2 pl-6 italic;
+}
+
+.table-row {
+  @apply m-0 border-t p-0 even:bg-muted;
+}
+
+.table-cell-header {
+  @apply border px-4 py-2 text-left font-bold [&[align=center]]:text-center [&[align=right]]:text-right;
+}
+
+.table-cell-data {
+  @apply border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right;
 }
