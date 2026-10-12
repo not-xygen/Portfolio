@@ -1,3 +1,92 @@
 {
-  "welcome": "Welcome"
+  "nav": {
+    "about": "Tentang",
+    "stack": "Teknologi",
+    "projects": "Proyek",
+    "contact": "Kontak",
+    "experience": "Pengalaman"
+  },
+  "hero": {
+    "role": "Software engineer",
+    "lead": "Saya membangun website dan software yang efisien dan berorientasi pada pengguna, dari frontend hingga backend.",
+    "contact": "Hubungi saya",
+    "projects": "Lihat proyek"
+  },
+  "about": {
+    "title": "Tentang",
+    "body": "Lulusan Teknik Informatika Institut Teknologi Kalimantan dengan pengalaman mengembangkan website dan software. Saya tertarik pada arsitektur bersih, desain sistem, dan teknologi yang selaras dengan kebutuhan bisnis. Saya suka membuat alat yang menyederhanakan alur kerja dan membuat teknologi lebih mudah digunakan.",
+    "education": "Pendidikan",
+    "degree": "Sarjana, Informatika",
+    "school": "Institut Teknologi Kalimantan",
+    "gpa": "IPK 3,26 / 4,00",
+    "period": "Sep 2020 – Oct 2025"
+  },
+  "stack": {
+    "title": "Teknologi",
+    "intro": "Teknologi yang saya gunakan.",
+    "languages": "Bahasa",
+    "frontend": "Frontend",
+    "frameworks": "Framework dan library",
+    "databases": "Basis data",
+    "tools": "Alat",
+    "more": "Lainnya"
+  },
+  "projects": {
+    "title": "Proyek",
+    "live": "Aktif",
+    "next": "Studi kasus lainnya segera hadir.",
+    "open": "open-source",
+    "client": "proyek klien",
+    "repo": "Kode",
+    "visit": "Buka",
+    "items": {
+      "water": "Aplikasi web untuk memodelkan jaringan distribusi air bertekanan: pipa, simpul, pompa, katup, dan tangki. Menjalankan simulasi hidraulik dengan engine buatan sendiri dan menampilkan hasil dalam grafik, tabel, dan peta, dengan ekspor CSV/JSON. Dibuat sebagai tugas akhir.",
+      "simu": "REST API Rust untuk manajemen pengguna: membuat, memperbarui, menghapus, dan mengambil data pengguna. Dibuat bersama teman kuliah.",
+      "kramakata": "Website studio desain kreatif untuk branding, cetak, dan digital, dengan buku animasi untuk menjelajahi publikasi.",
+      "sentry": "Website company profile PT Sentinel Mitra Adiyaksa, perusahaan jasa pengamanan nasional.",
+      "fed": "Website FED Insight Indonesia, firma konsultan human capital di Jakarta.",
+      "noble": "Sistem manajemen database properti untuk Noble Property Asia: apartemen, rumah, kantor, dan tanah dengan foto, spesifikasi, harga, dan ketentuan sewa.",
+      "asmr": "Sistem kasir (POS) dan manajemen stok untuk toko suku cadang mobil, dengan kasir, pembelian, mutasi stok, invoice, dan laporan keuangan mini."
+    }
+  },
+  "contact": {
+    "title": "Kontak",
+    "body": "Terbuka untuk posisi software. Hubungi saya lewat email atau LinkedIn.",
+    "cta": "Kirim pesan di LinkedIn",
+    "email": "Kirim email"
+  },
+  "footer": {
+    "rights": "Hak cipta dilindungi.",
+    "built": "Dibuat sepenuh hati di Balikpapan, ditemani kopi dan rasa penasaran."
+  },
+  "a11y": {
+    "theme": "Ganti tema",
+    "language": "Ganti bahasa"
+  },
+  "experience": {
+    "title": "Pengalaman",
+    "present": "Sekarang",
+    "bersinar": [
+      "Mendukung infrastruktur IT perusahaan dan membangun software internal."
+    ],
+    "erp": [
+      "Membangun dan memelihara sistem ERP modular dengan Nuxt.js dan Vue.js untuk produksi, keuangan, SDM, dan logistik.",
+      "Membuat dashboard berbasis peran dengan pemantauan data.",
+      "Mengintegrasikan layanan backend dengan Nuxt Nitro dan PostgreSQL, serta meningkatkan performa dashboard dan UI/UX."
+    ],
+    "xploratech": [
+      "Mendirikan studio pengembangan web dan cloud yang berfokus pada efisiensi bisnis.",
+      "Memimpin tim kecil membangun aplikasi yang mengotomatiskan proses manual.",
+      "Merancang CMS multibahasa dan portal keuangan dengan analitik real-time, mulai dari arsitektur, deployment, hingga QA."
+    ],
+    "bangkit": [
+      "Menyelesaikan kurikulum intensif cloud computing: Node.js, Docker, dan Google Cloud Platform.",
+      "Membangun layanan backend dan berlatih containerization serta deployment cloud."
+    ],
+    "kramakata": [
+      "Menjalankan peran ganda: software engineer dan project manager.",
+      "Berkolaborasi dalam pengembangan, desain, dan implementasi sistem berbasis web.",
+      "Mengelola jadwal, koordinasi tim, dan komunikasi dengan pemangku kepentingan lewat alur Agile dan dokumentasi teknis."
+    ]
+  }
 }

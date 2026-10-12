@@ -5,7 +5,32 @@
 
 * {
   box-sizing: border-box;
-  font-family: Rubik, cursive;
+}
+
+html {
+  font-family: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+::selection {
+  background: oklch(0.7 0.19 25 / 0.4);
+}
+
+:focus-visible {
+  outline: 2px solid oklch(0.637 0.237 25.3);
+  outline-offset: 3px;
+}
+
+.font-mono-data {
+  font-family: "DM Mono", ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
 }
 
 body {
@@ -182,4 +207,8 @@ html.light {
 
 .table-cell-data {
   @apply border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right;
+}
+
+.font-body {
+  font-family: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
 }

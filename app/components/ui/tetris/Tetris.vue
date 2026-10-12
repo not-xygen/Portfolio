@@ -140,6 +140,7 @@ onMounted(() => {
   timeoutId = setTimeout(calcGrid, 50);
 
   intervalId = setInterval(() => {
+    if (!grid.value.length) return;
     clearColumn();
     moveCellsDown();
     createNewCell();

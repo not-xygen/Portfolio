@@ -1,3 +1,92 @@
 {
-  "welcome": "Welcome"
+  "nav": {
+    "about": "About",
+    "stack": "Stack",
+    "projects": "Projects",
+    "contact": "Contact",
+    "experience": "Experience"
+  },
+  "hero": {
+    "role": "Software engineer",
+    "lead": "I build efficient, user-focused websites and software, across frontend and backend.",
+    "contact": "Get in touch",
+    "projects": "View projects"
+  },
+  "about": {
+    "title": "About",
+    "body": "Informatics graduate from Institut Teknologi Kalimantan with experience building websites and software. I care about clean architecture, system design, and technology that fits real business needs. I like building tools that simplify workflows and make technology easier to use.",
+    "education": "Education",
+    "degree": "Bachelor's degree, Informatics",
+    "school": "Institut Teknologi Kalimantan",
+    "gpa": "GPA 3.26 / 4.00",
+    "period": "Sep 2020 – Oct 2025"
+  },
+  "stack": {
+    "title": "Stack",
+    "intro": "Technologies I work with.",
+    "languages": "Languages",
+    "frontend": "Frontend",
+    "frameworks": "Frameworks and libraries",
+    "databases": "Databases",
+    "tools": "Tools",
+    "more": "Also"
+  },
+  "projects": {
+    "title": "Projects",
+    "live": "Live",
+    "next": "More case studies are on the way.",
+    "open": "open-source",
+    "client": "client work",
+    "repo": "Source",
+    "visit": "Visit",
+    "items": {
+      "water": "Web app for modeling pressurized water distribution networks: pipes, nodes, pumps, valves and tanks. Runs hydraulic simulations on a self-built engine and shows results as charts, tables and maps, with CSV/JSON export. Built as a final-year project.",
+      "simu": "Rust REST API for user management: create, update, delete and fetch users. Built together with a classmate.",
+      "kramakata": "Website for a creative design studio covering branding, print and digital work, with an animated book to browse publications.",
+      "sentry": "Company profile site for PT Sentinel Mitra Adiyaksa, a national security services company.",
+      "fed": "Website for FED Insight Indonesia, a human capital consulting firm in Jakarta.",
+      "noble": "Property database management system for Noble Property Asia: apartments, homes, offices and land with photos, specs, pricing and lease terms.",
+      "asmr": "Point-of-sale and stock management system for a car spare-parts retailer, with cashier, purchasing, stock mutation, invoices and a mini finance report."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "body": "Open to software roles. Reach me by email or on LinkedIn.",
+    "cta": "Message on LinkedIn",
+    "email": "Email me"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "built": "Hand-built in Balikpapan, fueled by coffee and curiosity."
+  },
+  "a11y": {
+    "theme": "Toggle theme",
+    "language": "Switch language"
+  },
+  "experience": {
+    "title": "Experience",
+    "present": "Present",
+    "bersinar": [
+      "Supporting company IT infrastructure and building internal software."
+    ],
+    "erp": [
+      "Built and maintained a modular ERP system in Nuxt.js and Vue.js covering production, finance, HR and logistics.",
+      "Built role-based dashboards with data monitoring.",
+      "Integrated backend services with Nuxt Nitro and PostgreSQL, and improved dashboard performance and UI/UX."
+    ],
+    "xploratech": [
+      "Founded a web and cloud development studio focused on business efficiency.",
+      "Led a small team building applications that automate manual processes.",
+      "Designed multilingual CMS platforms and finance portals with real-time analytics, across architecture, deployment and QA."
+    ],
+    "bangkit": [
+      "Completed an intensive cloud computing curriculum in Node.js, Docker and Google Cloud Platform.",
+      "Built backend services and practiced containerization and cloud deployment."
+    ],
+    "kramakata": [
+      "Worked in a dual role: software engineering and project management.",
+      "Collaborated on development, design and implementation of web-based systems.",
+      "Managed timelines, team coordination and stakeholder communication with Agile workflows and technical documentation."
+    ]
+  }
 }

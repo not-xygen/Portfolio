@@ -1,36 +1,43 @@
 <script setup lang="ts">
-import { navigationMenuTriggerStyle } from "./ui/navigation-menu";
+const { t, locale, setLocale } = useI18n();
 
 const menu = [
-  { title: "Home", href: "/" },
-  { title: "About", href: "/about" },
-  { title: "Projects", href: "/projects" },
-  { title: "Contact", href: "/contact" },
+  { key: "about", href: "#about" },
+  { key: "experience", href: "#experience" },
+  { key: "stack", href: "#stack" },
+  { key: "projects", href: "#projects" },
+  { key: "contact", href: "#contact" },
 ];
 </script>
 <template>
   <header
-    class="sticky top-0 grid grid-cols-12 items-center border-b bg-white dark:bg-black z-50"
+    class="sticky top-0 grid grid-cols-12 items-center border-b bg-background/90 backdrop-blur z-50"
   >
     <section
-      class="col-start-0 md:col-start-1 lg:col-start-3 col-span-full md:col-span-10 lg:col-span-8 flex justify-between border-l border-r border-dashed px-6 py-4"
+      class="col-start-0 md:col-start-1 lg:col-start-3 col-span-full md:col-span-10 lg:col-span-8 flex items-center justify-between border-l border-r border-dashed px-6 py-3"
     >
-      <div class="flex w-max items-center">
-        <h1 class="logo-title font-black text-2xl">Dhaffa Agus</h1>
-      </div>
-      <div class="flex gap-2">
-        <NavigationMenu>
-          <NavigationMenuList>
-            <NavigationMenuItem v-for="value in menu" :key="value.href">
-              <NavigationMenuLink
-                :href="value.href"
-                :class="navigationMenuTriggerStyle"
-              >
-                {{ value.title }}
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
+      <NuxtLink to="#top" class="logo-title font-black text-2xl">
+        Dhaffa Agus
+      </NuxtLink>
+      <div class="flex items-center gap-1">
+        <nav class="hidden sm:flex items-center" aria-label="Sections">
+          <a
+            v-for="item in menu"
+            :key="item.key"
+            :href="item.href"
+            class="px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
+            {{ t(`nav.${item.key}`) }}
+          </a>
+        </nav>
+        <Button
+          variant="outline"
+          class="font-mono-data px-2.5 text-xs"
+          :aria-label="t('a11y.language')"
+          @click="setLocale(locale === 'en' ? 'id' : 'en')"
+        >
+          {{ locale === "en" ? "ID" : "EN" }}
+        </Button>
         <ToggleDarkMode />
       </div>
     </section>

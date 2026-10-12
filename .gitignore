@@ -25,3 +25,8 @@ logs
 
 # Nuxt Fonts
 .data
+
+# Agents
+.claude
+.impeccable
+PRODUCT.md
