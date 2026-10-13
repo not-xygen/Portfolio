@@ -7,7 +7,7 @@
     "experience": "Pengalaman"
   },
   "hero": {
-    "role": "Software engineer",
+    "role": "Software Engineer",
     "lead": "Saya membangun website dan software yang efisien dan berorientasi pada pengguna, dari frontend hingga backend.",
     "contact": "Hubungi saya",
     "projects": "Lihat proyek"
@@ -26,10 +26,10 @@
     "intro": "Teknologi yang saya gunakan.",
     "languages": "Bahasa",
     "frontend": "Frontend",
-    "frameworks": "Framework dan library",
     "databases": "Basis data",
     "tools": "Alat",
-    "more": "Lainnya"
+    "backend": "Backend",
+    "mobile": "Mobile dan peta"
   },
   "projects": {
     "title": "Proyek",

@@ -5,23 +5,23 @@ const linkedin = "https://www.linkedin.com/in/dhaffaagus/";
 const email = "dhaffaagus09@gmail.com";
 
 const jobs = [
-  { id: "bersinar", short: "BJP", company: "PT. Bersinar Jaya Perkasa", role: "IT Support Engineer | Software Engineer", from: "2026-04", to: null, place: "Balikpapan", n: 1 },
-  { id: "erp", short: "ERP Nusantara", company: "ERP Nusantara", role: "Full-stack Developer", from: "2025-08", to: "2026-04", place: "Balikpapan", n: 3 },
-  { id: "xploratech", short: "Xploratech", company: "Xploratech", role: "Founder | Software Engineer", from: "2023-11", to: null, place: "Balikpapan", n: 3 },
+  { id: "bjp", short: "BJP", company: "PT. Bersinar Jaya Perkasa", role: "IT Support Engineer | Software Engineer", from: "2026-04", to: null, place: "Balikpapan", n: 1 },
+  { id: "erp", short: "ERP Nusantara", company: "ERP Nusantara", role: "Full-Stack Developer", from: "2025-08", to: "2026-04", place: "Balikpapan", n: 3 },
+  { id: "xploratech", short: "Xploratech", company: "Xploratech", role: "Founder", from: "2023-11", to: null, place: "Balikpapan", n: 3 },
   { id: "bangkit", short: "Bangkit", company: "Bangkit Academy led by Google, Tokopedia, Gojek & Traveloka", role: "Cloud Computing Cohort", from: "2023-02", to: "2023-07", place: "", n: 2 },
-  { id: "kramakata", short: "Kramakata", company: "Kramakata", role: "Software Engineer | Project Manager", from: "2022-08", to: null, place: "Jakarta", n: 3 },
+  { id: "kramakata", short: "Kramakata", company: "Kramakata", role: "Software Engineer", from: "2022-08", to: null, place: "Jakarta", n: 3 },
 ];
 
 type Project = { id: string; name: string; tags: string[]; repo?: string; url?: string };
 const openSource: Project[] = [
   { id: "water", name: "Water Network Simulation", tags: ["React", "Vite", "TypeScript"], repo: "https://github.com/not-xygen/Water-Network-Simulation-Web-App", url: "https://water-network-simulation.netlify.app" },
-  { id: "simu", name: "SIMU-API", tags: ["Rust", "REST API"], repo: "https://github.com/not-xygen/API-SIMU" },
+  { id: "simu", name: "SIMU-API", tags: ["Rust", "API"], repo: "https://github.com/not-xygen/API-SIMU" },
 ];
 const client: Project[] = [
-  { id: "kramakata", name: "Kramakata", tags: ["Animated site", "CMS", "Multilingual"], url: "https://kramakata.com" },
-  { id: "sentry", name: "Sentry Security", tags: ["CMS", "Multilingual", "Map", "WhatsApp link"], url: "https://sentrysecurity.co.id" },
-  { id: "fed", name: "FED Insight", tags: [], url: "https://www.fed-insight.com" },
   { id: "noble", name: "Noble Property Asia", tags: ["Dashboard", "Image upload", "PDF export", "Data logs", "Advanced filters"], url: "https://nobleasiaid.com" },
+  { id: "kramakata", name: "Kramakata", tags: ["Animated Site", "CMS", "Multilingual"], url: "https://kramakata.com" },
+  { id: "sentry", name: "Sentry Security", tags: ["CMS", "Multilingual", "Map", "Contact Form"], url: "https://sentrysecurity.co.id" },
+  { id: "fed", name: "FED Insight", tags: ["CMS", "Multilingual"], url: "https://www.fed-insight.com" },
   { id: "asmr", name: "ASMR Retail", tags: ["POS", "Stock", "Invoices", "PDF export"] },
 ];
 const projectGroups = [
@@ -46,44 +46,21 @@ const years = [2023, 2024, 2025, 2026]
   .map((y) => ({ y, left: pct((y - 2022) * 12 + 1 - 8) }))
   .filter((x) => parseFloat(x.left) < 98);
 
+const pkg = "lucide:package";
 const stack = [
-  {
-    group: "languages",
-    items: [
-      ["TypeScript", "typescript"], ["JavaScript", "javascript"], ["Rust", "rust"],
-      ["Go", "go"], ["Dart", "dart"], ["HTML", "html5"], ["CSS", "css3"], ["Sass", "sass"],
-    ],
-  },
-  {
-    group: "frameworks",
-    items: [
-      ["React", "react"], ["Next.js", "nextdotjs"], ["Vue", "vuedotjs"], ["Nuxt", "nuxtdotjs"],
-      ["Tailwind CSS", "tailwindcss"], ["Vite", "vite"], ["Flutter", "flutter"],
-      ["Node.js", "nodedotjs"], ["Express", "express"],
-    ],
-  },
-  {
-    group: "databases",
-    items: [["MySQL", "mysql"], ["PostgreSQL", "postgresql"], ["Supabase", "supabase"]],
-  },
-  {
-    group: "tools",
-    items: [["Docker", "docker"], ["Git", "git"], ["GitHub", "github"], ["Vitest", "vitest"]],
-  },
-  {
-    group: "more",
-    items: [
-      ["React Native"], ["Mapbox"], ["shadcn/ui"], ["Radix"], ["Zustand"], ["TanStack Query"],
-      ["Framer Motion"], ["Axum"], ["Hapi"], ["tRPC"], ["Zod"],
-    ],
-  },
+  { group: "languages", items: [["TypeScript", "typescript"], ["JavaScript", "javascript"], ["Rust", "rust"], ["Go", "go"], ["Dart", "dart"], ["HTML", "html5"], ["CSS", "css3"], ["Sass", "sass"]] },
+  { group: "frontend", items: [["Vue", "vuedotjs"], ["Nuxt", "nuxtdotjs"], ["React", "react"], ["Next.js", "nextdotjs"], ["Vite", "vite"], ["Tailwind CSS", "tailwindcss"], ["shadcn/ui", "shadcnui"], ["Radix", "radixui"], ["TanStack Query", "reactquery"], ["Zustand", pkg], ["Framer Motion", "framer"]] },
+  { group: "backend", items: [["Node.js", "nodedotjs"], ["Express", "express"], ["Hapi", pkg], ["Axum", pkg], ["tRPC", "trpc"], ["Zod", "zod"]] },
+  { group: "mobile", items: [["Flutter", "flutter"], ["React Native", "react"], ["Mapbox", "mapbox"]] },
+  { group: "databases", items: [["PostgreSQL", "postgresql"], ["MySQL", "mysql"], ["Supabase", "supabase"]] },
+  { group: "tools", items: [["Git", "git"], ["GitHub", "github"], ["Docker", "docker"], ["Vitest", "vitest"]] },
 ].map((g) => ({
   group: g.group,
-  items: g.items.map(([name, icon]) => ({ name, icon: icon && `simple-icons:${icon}` })),
+  items: g.items.map(([name, icon]) => ({ name, icon: icon!.includes(":") ? icon : `simple-icons:${icon}` })),
 }));
 
 useSeoMeta({
-  title: "Dhaffa Agus — Software engineer",
+  title: "Dhaffa Agus — Software Engineer",
   description: () => t("hero.lead"),
 });
 </script>
@@ -239,8 +216,7 @@ useSeoMeta({
           <p><span class="text-red-700 dark:text-red-400">$</span> stack --{{ g.group }}</p>
           <ul class="mt-3 grid grid-cols-2 gap-x-4 gap-y-1.5 sm:grid-cols-3 md:grid-cols-4">
             <li v-for="item in g.items" :key="item.name" class="flex items-center gap-2.5">
-              <Icon v-if="item.icon" :name="item.icon" class="size-4 shrink-0 text-red-700 dark:text-red-400" />
-              <span v-else class="size-4 shrink-0 text-center text-muted-foreground">·</span>
+              <Icon :name="item.icon" class="size-4 shrink-0 text-red-700 dark:text-red-400" />
               <span>{{ item.name }}</span>
             </li>
           </ul>

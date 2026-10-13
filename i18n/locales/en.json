@@ -7,10 +7,10 @@
     "experience": "Experience"
   },
   "hero": {
-    "role": "Software engineer",
-    "lead": "I build efficient, user-focused websites and software, across frontend and backend.",
+    "role": "Software Engineer",
+    "lead": "I build efficient, user-focused websites and software.",
     "contact": "Get in touch",
-    "projects": "View projects"
+    "projects": "View Projects"
   },
   "about": {
     "title": "About",
@@ -26,10 +26,10 @@
     "intro": "Technologies I work with.",
     "languages": "Languages",
     "frontend": "Frontend",
-    "frameworks": "Frameworks and libraries",
     "databases": "Databases",
     "tools": "Tools",
-    "more": "Also"
+    "backend": "Backend",
+    "mobile": "Mobile and maps"
   },
   "projects": {
     "title": "Projects",
